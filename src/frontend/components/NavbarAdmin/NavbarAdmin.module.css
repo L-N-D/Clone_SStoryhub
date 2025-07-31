@@ -1,0 +1,33 @@
+.navbar {
+    position: relative;
+    height: 80px;
+    /* border: 2px solid white; */
+    border-bottom: 1px solid #7f8caa;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px 16px;
+    gap: 16px;
+    box-sizing: border-box;
+}
+
+.search {
+    left: 0;
+    width: 800px;
+}
+
+.feedback {
+    color: white;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.noti {
+    color: white;
+}
+
+.mess {
+    color: white;
+}

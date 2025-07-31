@@ -1,0 +1,137 @@
+.searchBar{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #A2A2A2;
+}
+
+.searchInput {
+    width: 606px;
+    height: 39px;
+    border-radius: 20px;
+    color: #000000;
+    background-color: #EAEFEF;
+    border: 1px solid #A2A2A2;
+    font-size: 16px;
+    padding: 0 20px;
+
+}
+
+.searchResults {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 606px;
+    max-height: 320px;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    z-index: 1000;
+    padding: 12px 0;
+    border: 1px solid #A2A2A2;
+    animation: fadeIn 0.2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px) translateX(-50%); }
+    to { opacity: 1; transform: translateY(0) translateX(-50%); }
+}
+
+.searchItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    padding: 10px 18px;
+    transition: background 0.2s;
+    border-bottom: 1px solid #eee;
+}
+.searchItem:last-child {
+    border-bottom: none;
+}
+.searchItem:hover {
+    background: #f5f5f5;
+    cursor: pointer;
+}
+
+.ComicID{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.ComicID:hover {
+    background-color: #a2a2a2;
+    cursor: pointer;
+}
+.CoverImage {
+    width: 60px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 0;
+    border: 1px solid #A2A2A2;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.ComicName {
+    font-size: 16px;
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+
+.search_button {
+  font-size: 16px;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+.search_button:hover {
+  background-color: #e0e0e0;
+  color: #0070f3;
+  border-color: #aaa;
+  transform: scale(1.1);
+}
+
+.search_container {
+  position: relative;
+}
+
+.search_bar_wrapper {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.search_container:focus-within .search_bar_wrapper {
+  opacity: 1;
+  visibility: visible;
+}

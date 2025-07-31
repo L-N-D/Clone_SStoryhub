@@ -1,0 +1,39 @@
+.chatContainer {
+
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--color-bg-secondary);
+}
+.chatHeader{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chatBox{
+    display: flex;
+    gap: 10px;
+}
+
+.chatInput {
+    width: 606px;
+    height: 39px;
+    border-radius: 20px;
+    color: #000000;
+    background-color: #EAEFEF;
+    border: 1px solid #000000;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+}
+
+
+.sendButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0 20px;
+}
